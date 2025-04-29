@@ -1,0 +1,60 @@
+body {
+    font-family: 'Courier New', Courier, monospace !important;
+    overflow: hidden;
+    color: #ffffff;
+    background-image: linear-gradient(90deg, grey,darkgrey)
+}
+.all {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    font:400 18px Courier;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+}
+button {
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font: 400 13.333px Courier;
+    color: white;
+    background-color: rgb(117, 117, 117);
+}
+.timer {
+    margin:auto;
+    font-size: 25px;
+}
+#canvas {
+    margin:auto;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 90%; 
+    margin: 30px;
+    align-items: center;
+}
+.displayNone {
+    display:none; 
+}
+.locked {
+    background-color: rgb(64, 165, 64);
+}
+#myCanvas {
+    box-shadow: 0px 0px 10px 4px #00000038;
+    border: 3px black solid;
+    background: #c7c7c7;
+}
+#rules {
+    margin: 0px 100px 0px 100px;
+}
+#difficultyRules {
+    margin: 0px 100px 0px 100px;
+}
+#ready {
+    align-self: baseline;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>color virus</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <div class="all">
+      <h1>color virus</h1>
+      <div class="timer">
+        <p id="timer"></p>
+      </div>
+      <div id="canvas" class="displayNone">
+        <canvas id="myCanvas"></canvas>
+      </div>
+      <div id="startName" class = "displayNone">
+        <h3>what is your name?</h3>
+        <input type="text" id="inputName">
+        <button id="submitName">NEXT</button>
+      </div>
+      <div class="buttons">
+        <div id="difficulty" class="displayNone">
+          <h3>change the difficulty</h3>
+          <button id="easy">easy</button>
+          <button id="middle">middle</button>
+          <button id="hard">hard</button>
+          <br>
+          <button id="submitDifficulty">SAVE</button>
+        </div>
+        <div><button id="ready" class="displayNone">READY</button></div>
+      </div>
+      <div id = "gameOver" class="displayNone">
+        <p id="levelCounter" class=""></p>
+        <button id="restart">play again</button>
+      </div>
+      <div id="rules">
+        <h3>Rules:</h3>
+        <p> You need to pass through the magic door. As many times as you can! Use <u>Arrows</u> to move.</p>  
+        <p> In order to do it, you and your teammate (if there is any) need to get a color that matches with color of the door. </p>
+        <p> Use <u>Space</u> to shoot the monsters to pick up their colors. You can bump your teammate to make a new color mix.</p>
+        <p> You have <u>3</u> lives. Each time a monster bumps into you, you lose one life and your color turns paler.</p> 
+        <p> To win you have to complete at least 10 levels.</p>  
+        <p> Good luck!</p>  
+      </div>
+      <div id="difficultyRules" class="displayNone">
+        <p>You have to choose and submit a difficulty:<br>easy: Only 3 monsters and unlimited time<br>middle: 6 monsters and 10 minutes time<br>hard: 9 hungry monsters and only 5 minutes time</p>
+      </div>
+    </div>
+  </body>
+</html>
